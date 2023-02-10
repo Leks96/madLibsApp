@@ -11,6 +11,13 @@ family care for the animals when she is home.`;
 
 let userInputs=[];
 
+let numberOfQuestions= 17;
+let questionCounter= 0;
+
+for(questionCounter= i; i >=0; i++){
+    
+}
+
 console.log(`In the land of the ${userInputs[0, tribe]}, in ${userInputs[1, geopoliticalzone]} ${userInputs[2, country]},
 there is a ${userInputs[3, gender(boy or girl)]} named ${userInputs[4, Name]}.
 ${userInputs[4, Name]} lives near a ${userInputs[5, locality]}, where
