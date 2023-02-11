@@ -1,24 +1,14 @@
 "use script"
 
-`In the land of the Maasai, in Southwest Kenya,
+/*`In the land of the Maasai, in Southwest Kenya,
 there is a girl named Rebecca.
 Rebecca lives near a large national park, where
 there are golden lions, and big grey elephants.
 Rebecca's family keep cattle, sheep and goats and
 depend on farming the land for food for their
 animals. Rebecca goes to school and helps her
-family care for the animals when she is home.`
-
-let originalStory= `In the land of the ${userInputs[0]}, in ${userInputs[1]} ${userInputs[2]},
-there is a ${userInputs[3]} named ${userInputs[4]}.
-${userInputs[4]} lives near a ${userInputs[5]}, where
-there are ${userInputs[6]}, and ${userInputs[7]}.
-${userInputs[4]}'s family keep ${userInputs[14]}, ${userInputs[15]} and ${userInputs[16]} and
-depend on farming the land for food for their
-animals. ${userInputs[4]} ${userInputs[8]} to ${userInputs[9]} and ${userInputs[10]} ${userInputs[11]}
-family ${userInputs[12]} for the ${userInputs[13]} when ${userInputs[11]} is home.`;
-
-let userInputs=[];
+family care for the animals when she is home.`*/
+windows.onload = () => {
 
 let numberOfQuestions= 17;
 let questionCounter= 0;
@@ -43,13 +33,23 @@ let questionArray= [
     "Enter another animal"
 ]
 
-for(let i= numberOfQuestions; i >=0; i--){
+let userInputs = [];
+for (let i = numberOfQuestions; i >= 0; i--){
     console.log(questionArray[questionCounter]);
-   userInputs.push(prompt=(questionArry[questionCounter]));
+   userInputs.push(
+    prompt=(questionArray[questionCounter])
+    );
    console.log(userInputs);
    questionCounter++;
    numberOfQuestions--;
 }
 
+let originalStory= `<h2>In the land of the ${userInputs[0]}, in ${userInputs[1]} ${userInputs[2]}, there is a ${userInputs[3]} named ${userInputs[4]}.</h2>
+<h2>${userInputs[4]} lives near a ${userInputs[5]}, where there are ${userInputs[6]}, and ${userInputs[7]}.</h2>
+<h2>${userInputs[4]}'s family keep ${userInputs[14]}, ${userInputs[15]} and ${userInputs[16]} and depend on farming the land for food for their animals.</h2>
+<h2>${userInputs[4]} ${userInputs[8]} to ${userInputs[9]} and ${userInputs[10]} ${userInputs[11]}
+family ${userInputs[12]} for the ${userInputs[13]} when ${userInputs[11]} is home.</h2>`;
+
 console.log(originalStory);
 document.write(originalStory);
+};
